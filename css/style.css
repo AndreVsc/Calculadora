@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#Calculadora{
+    box-shadow: 1px 0 5px 1px rgb(110, 110, 110);
+    border-radius: 1px;
+    width: 200px;
+    gap: 20px;
+}
+
+#Display{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#displayInput{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+}
+
+#Teclado{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+button{
+    height: 60px;
+    border: none;
+    font-size: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ccc6c6;
+
+}
+.Numeros,.Ponto,.Igual{
+    color: #333;
+}
+
+.Operador{
+    color: #c54646;
+}
+
+.Apagar{
+    width: 100%;
+    height: 42px;
+}
